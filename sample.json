@@ -1,0 +1,161 @@
+{
+  "001": {
+    "Final_Schedule": {
+      "1": {
+        "Matt": "commitment",
+        "John": "rest",
+        "Bill": "duty"
+      },
+      "2": {
+        "Matt": "rest",
+        "John": "duty",
+        "Bill": "commitment"
+      },
+      "3": {
+        "Matt": "duty",
+        "John": "rest",
+        "Bill": "commitment"
+      },
+      "4": {
+        "Matt": "commitment",
+        "John": "rest",
+        "Bill": "duty"
+      },
+      "5": {
+        "Matt": "rest",
+        "John": "duty",
+        "Bill": "commitment"
+      },
+      "6": {
+        "Matt": "duty",
+        "John": "rest",
+        "Bill": "commitment"
+      },
+      "7": {
+        "Matt": "commitment",
+        "John": "rest",
+        "Bill": "duty"
+      },
+      "8": {
+        "Matt": "rest",
+        "John": "duty",
+        "Bill": "commitment"
+      },
+      "9": {
+        "Matt": "duty",
+        "John": "rest",
+        "Bill": "commitment"
+      },
+      "10": {
+        "Matt": "duty",
+        "John": "commitment",
+        "Bill": "rest"
+      },
+      "11": {
+        "Matt": "duty",
+        "John": "commitment",
+        "Bill": "rest"
+      },
+      "12": {
+        "Matt": "duty",
+        "John": "commitment",
+        "Bill": "rest"
+      },
+      "13": {
+        "Matt": "duty",
+        "John": "commitment",
+        "Bill": "rest"
+      },
+      "14": {
+        "Matt": "duty",
+        "John": "commitment",
+        "Bill": "rest"
+      },
+      "15": {
+        "Matt": "duty",
+        "John": "commitment",
+        "Bill": "rest"
+      },
+      "16": {
+        "Matt": "duty",
+        "John": "commitment",
+        "Bill": "rest"
+      },
+      "17": {
+        "Matt": "duty",
+        "John": "commitment",
+        "Bill": "rest"
+      },
+      "18": {
+        "Matt": "duty",
+        "John": "commitment",
+        "Bill": "rest"
+      },
+      "19": {
+        "Matt": "duty",
+        "John": "commitment",
+        "Bill": "rest"
+      },
+      "20": {
+        "Matt": "duty",
+        "John": "commitment",
+        "Bill": "rest"
+      },
+      "21": {
+        "Matt": "duty",
+        "John": "commitment",
+        "Bill": "rest"
+      },
+      "22": {
+        "Matt": "duty",
+        "John": "commitment",
+        "Bill": "rest"
+      },
+      "23": {
+        "Matt": "duty",
+        "John": "commitment",
+        "Bill": "rest"
+      },
+      "24": {
+        "Matt": "duty",
+        "John": "commitment",
+        "Bill": "rest"
+      },
+      "25": {
+        "Matt": "duty",
+        "John": "commitment",
+        "Bill": "rest"
+      },
+      "26": {
+        "Matt": "duty",
+        "John": "commitment",
+        "Bill": "rest"
+      },
+      "27": {
+        "Matt": "duty",
+        "John": "commitment",
+        "Bill": "rest"
+      },
+      "28": {
+        "Matt": "commitment",
+        "John": "duty",
+        "Bill": "rest"
+      },
+      "29": {
+        "Matt": "duty",
+        "John": "rest",
+        "Bill": "duty"
+      },
+      "30": {
+        "Matt": "commitment",
+        "John": "duty",
+        "Bill": "rest"
+      },
+      "31": {
+        "Matt": "commitment",
+        "John": "duty",
+        "Bill": "rest"
+      }
+    }
+  }
+}
