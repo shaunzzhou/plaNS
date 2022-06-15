@@ -184,14 +184,7 @@ export default function CalendarScreen() {
       </Table>
       <View style={styles.container2}>
         {/* <Log value={loadData} /> */}
-        <CSVLink
-          data={hold}
-          headers={names}
-          filename={"Final_Schedule.csv"}
-          className="btn btn-primary"
-        >
-          Download me
-        </CSVLink>
+        <Text style={{color: "blue" }}>Download</Text>
         <StatusBar style="auto" />
       </View>
     </View>
@@ -214,6 +207,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 16,
     fontWeight: "bold",
+    color: "white",
   },
   cellText: {
     margin: 6,
@@ -229,6 +223,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
     textAlign: "center",
+
   },
   container2: {
     flex: 1,

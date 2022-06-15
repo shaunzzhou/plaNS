@@ -13,7 +13,7 @@ export default function GeneratingScreen({ navigation }) {
         style={styles.button}
         onPress={() => navigation.navigate("Calendar")}
       >
-        <Text>Next</Text>
+        <Text style={styles.button_text}>Next</Text>
       </TouchableOpacity>
     </View>
   );
@@ -21,22 +21,27 @@ export default function GeneratingScreen({ navigation }) {
 
 const styles = StyleSheet.create({
   button: {
-    padding: 20,
-    backgroundColor: "transparent",
+    padding: 10,
+    marginTop: 20,
+    width: 150,
+    backgroundColor: "#648839",
     borderRadius: 10,
     shadowColor: "#171717",
     shadowOffset: { width: -2, height: 4 },
     shadowOpacity: 0.15,
     shadowRadius: 3,
     borderWidth: 2,
-    borderColor: `rgba(0,0,0,0.4)`,
+    borderColor: "`rgba(0,0,0,0.4)`",
+    justifyContent: "center",
+    alignSelf: "center",
+    marginBottom: 30,
+    alignItems: "center",
+    marginBottom: 30,
   },
   button_text: {
-    fontSize: 16,
+    fontSize: 18,
     lineHeight: 21,
-    fontWeight: "bold",
-    letterSpacing: 0.25,
-    color: "black",
+    color: "white",
   },
   text: {
     fontWeight: "bold",

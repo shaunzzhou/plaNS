@@ -123,11 +123,6 @@ export default function IndividualCommitmentScreen({ navigation }) {
         </View>
       </Modal>
       <View>
-        <TouchableOpacity
-          style={{ padding: 10, marginTop: 30, marginLeft: 10 }}
-        >
-          <AntDesign name="leftcircle" size={35} color="black" />
-        </TouchableOpacity>
         <Text style={styles.label}>Jason</Text>
       </View>
 
@@ -147,5 +142,6 @@ const styles = StyleSheet.create({
     fontSize: 30,
     textAlign: "center",
     marginBottom: 20,
+    marginTop: 20,
   },
 });

@@ -30,8 +30,8 @@ export default function CustomizeScreen({ navigation }) {
       <View
         style={{
           padding: 10,
-          paddingTop: 20,
-          paddingBottom: 20,
+          paddingTop: 10,
+          paddingBottom: 10,
           borderBottomColor: "black",
           borderBottomWidth: 1,
           flexDirection: "row",
@@ -42,7 +42,7 @@ export default function CustomizeScreen({ navigation }) {
             deleteItem(item.id);
           }}
         >
-          <MaterialIcons name="cancel" size={40} color="red" />
+          <MaterialIcons name="cancel" size={30} color="red" />
         </TouchableOpacity>
         <Text style={{ fontSize: 16, textAlign: "left", marginLeft: 20 }}>
           {item.title}
@@ -91,9 +91,9 @@ export default function CustomizeScreen({ navigation }) {
   //   console.log(dutyPersonnels);
   // }, [dutyPersonnels]);
 
-  useEffect(() => {
-    console.log(allInfo);
-  }, [allInfo]);
+  // useEffect(() => {
+  //   console.log(allInfo);
+  // }, [allInfo]);
 
   return (
     <View style={{ flex: 1 }}>
@@ -134,7 +134,7 @@ export default function CustomizeScreen({ navigation }) {
             onChangeText={(newText) => setdutyPersonnelName(newText)}
           />
           <TouchableOpacity style={styles.button} onPress={addName}>
-            <AntDesign name="pluscircle" size={40} color="green" />
+            <AntDesign name="pluscircle" size={30} color="#648839" />
           </TouchableOpacity>
         </View>
       </ScrollView>
@@ -146,18 +146,20 @@ export default function CustomizeScreen({ navigation }) {
       />
       <TouchableOpacity
         style={{
-          alignSelf: "center",
-          padding: 20,
-          backgroundColor: "transparent",
+          padding: 10,
+          marginTop: 20,
+          width: 150,
+          backgroundColor: "#648839",
           borderRadius: 10,
           shadowColor: "#171717",
           shadowOffset: { width: -2, height: 4 },
           shadowOpacity: 0.15,
           shadowRadius: 3,
           borderWidth: 2,
-          borderColor: `rgba(0,0,0,0.4)`,
-          marginTop: 20,
-          marginBottom: 20,
+          borderColor: "`rgba(0,0,0,0.4)`",
+          justifyContent: "center",
+          alignSelf: "center",
+          marginBottom: 30,
         }}
         onPress={() => {
           navigation.navigate("Get Commitments");
@@ -187,17 +189,19 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     marginTop: 10,
     marginBottom: 30,
-    borderWidth: 1,
     width: "80%",
-    padding: 10,
+    padding: 0,
+    bottomBorderColor: "black",
+    borderBottomWidth: 1,
   },
   nameInput: {
     marginLeft: 42,
-    marginTop: 10,
-    marginBottom: 30,
-    borderWidth: 1,
+    marginTop: 0,
+    marginBottom: 10,
     width: "65%",
-    padding: 10,
+    padding: 0,
+    borderBottomWidth: 1,
+    borderBottomColor: "black",
   },
   buttons: {
     flexDirection: "row",
@@ -214,8 +218,8 @@ const styles = StyleSheet.create({
   buttonText: {
     fontSize: 16,
     lineHeight: 21,
-    fontWeight: "bold",
     letterSpacing: 0.25,
-    color: "black",
+    color: "white",
+    alignSelf: "center",
   },
 });

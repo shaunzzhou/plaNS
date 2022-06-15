@@ -33,8 +33,8 @@ export default function CommitmentScreenStack1({ navigation }) {
 
   function renderItem({ item }) {
     return (
-      <View>
-        <Text style={{ fontSize: 20, fontWeight: "bold" }}>{item.name}</Text>
+      <View style={{marginBottom:25}}>
+        <Text style={{ fontSize: 26, fontWeight: "bold"}}>{item.name}</Text>
         <Text>
           {item.start_date} and {item.end_date}
         </Text>
@@ -71,17 +71,6 @@ export default function CommitmentScreenStack1({ navigation }) {
       <TouchableOpacity style={styles.button}>
         <Text style={styles.button_text}>Copy</Text>
       </TouchableOpacity>
-      <View
-        style={{
-          alignSelf: "flex-end",
-          alignItems: "flex-end",
-          marginHorizontal: 10,
-        }}
-      >
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.button_text}>Refresh</Text>
-        </TouchableOpacity>
-      </View>
       <FlatList
         data={data}
         renderItem={renderItem}
@@ -92,21 +81,13 @@ export default function CommitmentScreenStack1({ navigation }) {
           style={styles.button}
           onPress={() => navigation.navigate("Generating Schedule...")}
         >
-          <FontAwesome
-            style={styles.icon}
-            name="plus-circle"
-            color={"green"}
-            size={30}
-          />
           <Text
             style={{
               fontSize: 16,
               lineHeight: 20,
               fontWeight: "bold",
               letterSpacing: 0.25,
-              color: "black",
-              marginHorizontal: 35,
-              marginBottom: 5,
+              color: "white",
             }}
           >
             Generate
@@ -120,22 +101,28 @@ export default function CommitmentScreenStack1({ navigation }) {
 const styles = StyleSheet.create({
   button: {
     padding: 10,
-    backgroundColor: "transparent",
+    marginTop: 20,
+    width: 150,
+    backgroundColor: "#648839",
     borderRadius: 10,
     shadowColor: "#171717",
     shadowOffset: { width: -2, height: 4 },
     shadowOpacity: 0.15,
     shadowRadius: 3,
     borderWidth: 2,
-    borderColor: `rgba(0,0,0,0.4)`,
-    marginBottom: 80,
+    borderColor: "`rgba(0,0,0,0.4)`",
+    justifyContent: "center",
+    alignSelf: "center",
+    marginBottom: 30,
+    alignItems: "center",
+    marginBottom: 30,
   },
   button_text: {
     fontSize: 16,
     lineHeight: 21,
-    fontWeight: "bold",
     letterSpacing: 0.25,
-    color: "black",
+    color: "white",
+    alignSelf: "center",
   },
   text: {
     fontWeight: "bold",

@@ -18,44 +18,56 @@ export default function SetCommitmentScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={{ fontSize: 25, fontWeight: "bold", marginTop: 100 }}>
+      <Text style={{ fontSize: 30, fontWeight: "bold", marginTop: 50, marginBottom:50 }}>
         State your commitments
       </Text>
       <Name />
       {inputList}
       <TouchableOpacity
         style={{
-          padding: 20,
-          backgroundColor: "transparent",
+          padding: 10,
+          marginTop: 20,
+          width: 150,
+          backgroundColor: "#648839",
           borderRadius: 10,
           shadowColor: "#171717",
           shadowOffset: { width: -2, height: 4 },
           shadowOpacity: 0.15,
           shadowRadius: 3,
           borderWidth: 2,
-          borderColor: `rgba(0,0,0,0.4)`,
+          borderColor: "`rgba(0,0,0,0.4)`",
+          justifyContent: "center",
+          alignSelf: "center",
+          marginBottom: 30,
+          alignItems: "center",
+          marginBottom: 30,
         }}
         onPress={() => onAddBtnClick()}
       >
-        <Text>Add Commitment</Text>
+        <Text style={{color: "white"}}>Add Commitment</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={{
-          padding: 20,
-          backgroundColor: "transparent",
+          padding: 10,
+          marginTop: 20,
+          width: 150,
+          backgroundColor: "#648839",
           borderRadius: 10,
           shadowColor: "#171717",
           shadowOffset: { width: -2, height: 4 },
           shadowOpacity: 0.15,
           shadowRadius: 3,
           borderWidth: 2,
-          borderColor: `rgba(0,0,0,0.4)`,
-          marginBottom: 40,
-          marginTop: 40,
+          borderColor: "`rgba(0,0,0,0.4)`",
+          justifyContent: "center",
+          alignSelf: "center",
+          marginBottom: 30,
+          alignItems: "center",
+          marginBottom: 30,
         }}
         onPress={() => {}}
       >
-        <Text>Submit</Text>
+        <Text style={{color: "white"}}>Submit</Text>
       </TouchableOpacity>
     </View>
   );

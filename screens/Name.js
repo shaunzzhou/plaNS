@@ -31,12 +31,13 @@ export default function NameInput() {
       </Text>
       <TextInput
         placeholder="Input Code"
-        style={{ borderWidth: 1, borderColor: "#ccc", marginBottom: 70 }}
+        style={{ borderWidth: 1, borderColor: "#ccc", marginBottom: 30, width: 250 }}
       ></TextInput>
       <Text style={{ fontSize: 20, fontWeight: "bold", marginBottom: 8 }}>
         Name
       </Text>
       <DropDownPicker
+        style={{width: 250}}
         placeholder="Select Your Name"
         open={open}
         value={value}
@@ -53,7 +54,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
   },
 });

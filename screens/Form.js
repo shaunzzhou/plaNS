@@ -14,19 +14,19 @@ export default function Form() {
       <Text style={{ fontSize: 15, fontWeight: "bold", marginBottom: 10 }}>
         Which days would you like to block out?
       </Text>
-      <Text style={{ fontSize: 15, fontWeight: "bold", marginBottom: 10 }}>
+      <Text style={{ fontSize: 15, fontWeight: "bold", marginBottom: 10, marginTop: 10 }}>
         Start Date:
       </Text>
       <TextInput
         placeholder="Start Date"
-        style={{ borderWidth: 1, borderColor: "#ccc" }}
+        style={{ borderWidth: 1, borderColor: "#ccc", width: 250 }}
       ></TextInput>
-      <Text style={{ fontSize: 15, fontWeight: "bold", marginBottom: 10 }}>
+      <Text style={{ fontSize: 15, fontWeight: "bold", marginBottom: 10, marginTop: 10 }}>
         End Date:
       </Text>
       <TextInput
         placeholder="End Date"
-        style={{ borderWidth: 1, borderColor: "#ccc" }}
+        style={{ borderWidth: 1, borderColor: "#ccc", width: 250}}
       ></TextInput>
       <TouchableOpacity
         style={{
@@ -38,7 +38,7 @@ export default function Form() {
         }}
         onPress={() => {}}
       >
-        <Text style={{ fontWeight: "bold" }}>Delete Commitment</Text>
+        <Text style={{ color: "white"}}>Delete</Text>
       </TouchableOpacity>
     </View>
   );

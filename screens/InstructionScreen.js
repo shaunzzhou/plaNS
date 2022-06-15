@@ -11,26 +11,26 @@ export default function InstructionScreen({ navigation }) {
       <Text
         style={{
           fontWeight: "bold",
-          fontSize: 55,
-          marginBottom: 60,
+          fontSize: 50,
+          marginBottom: 20,
         }}
       >
         Instructions
       </Text>
 
       <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-        <FontAwesome style={styles.icon} name="user" color={"blue"} size={60} />
-        <Text style={styles.instructions_text}> bla bla bla</Text>
+      <Image style={styles.logo} source={require("../assets/customize.png")} />
+        <Text style={styles.instructions_text1}>  Step 1: Customize metrics{"\n"}  based on your scheduling needs!</Text>
       </View>
 
       <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-        <Text style={styles.instructions_text}> bla bla bla</Text>
-        <FontAwesome style={styles.icon} name="home" color={"blue"} size={60} />
+        <Text style={styles.instructions_text2}>Step 2: Share the link and wait for  {"\n"}the responses to come in!  </Text>
+        <Image style={styles.logo} source={require("../assets/input.png")} />
       </View>
 
-      <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-        <FontAwesome style={styles.icon} name="gear" color={"blue"} size={60} />
-        <Text style={styles.instructions_text}> bla bla bla</Text>
+      <View style={{ flexDirection: "row", justifyContent: "space-between"}}>
+      <Image style={styles.logo} source={require("../assets/algo.png")} />
+        <Text style={styles.instructions_text1}>  Step 3: Run the algorithm to{"\n"}  generate a schedule! </Text>
       </View>
 
       <TouchableOpacity
@@ -45,39 +45,54 @@ export default function InstructionScreen({ navigation }) {
 
 const styles = StyleSheet.create({
   button: {
-    padding: 20,
-    backgroundColor: "transparent",
+    padding: 10,
+    marginTop: 20,
+    width: 150,
+    backgroundColor: "#648839",
     borderRadius: 10,
     shadowColor: "#171717",
     shadowOffset: { width: -2, height: 4 },
     shadowOpacity: 0.15,
     shadowRadius: 3,
     borderWidth: 2,
-    borderColor: `rgba(0,0,0,0.4)`,
+    borderColor: "`rgba(0,0,0,0.4)`",
+    justifyContent: "center",
+
   },
   button_text: {
     fontSize: 16,
     lineHeight: 21,
-    fontWeight: "bold",
     letterSpacing: 0.25,
-    color: "black",
+    color: "white",
+    justifyContent: "center",
+    alignSelf: "center",
   },
   text: {
     fontWeight: "bold",
     fontSize: 60,
-    marginBottom: 90,
+    marginBottom: 50,
   },
   logo: {
-    width: 305.62,
-    height: 370,
-    marginBottom: 25,
+    width: 72,
+    height: 148,
   },
-  instructions_text: {
-    fontSize: 20,
+  instructions_text1: {
+    fontSize: 16,
     marginTop: 40,
     marginBottom: 50,
+    textAlign: "left",
+    marginLeft: 10,
   },
   icon: {
     marginTop: 20,
+    marginBottom: 20,
+    justifyContent: "center",
+  },
+  instructions_text2: {
+    fontSize: 16,
+    marginTop: 40,
+    marginBottom: 50,
+    textAlign: "right",
+    marginRight: 10,
   },
 });
